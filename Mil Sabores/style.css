@@ -336,3 +336,106 @@ footer {
     height: 1px;
     background-color: #ffffff96;
 }
+
+/* CSS DE PRODUCTOS XD */
+
+.nav-categorias {
+    background-color: #8B4513;
+    padding: 20px 0 15px 0;
+    text-align: center;
+    margin-bottom: 40px;
+    position: sticky;
+    top: 90px;
+    z-index: 99;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-categorias a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.nav-categorias a:hover {
+    color: #FFC0CB;
+}
+
+/* Estilos para las secciones de categoría*/
+.categoria-productos {
+    margin-bottom: 60px;
+}
+
+/*Estilos para el nuevo código de producto*/
+.codigo-producto {
+    color: #B0BEC5;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+/* imágenes de fondo */
+/* Tortas Cuadradas */
+.torta-cuadrada-chocolate {
+    background-image: url('imagenes/torta\ chocolate.webp');
+}
+.torta-cuadrada-frutas {
+    background-image: url('imagenes/torta\ cuadrada.jpg');
+}
+
+/* Tortas Circulares */
+.torta-circular-manjar {
+    background-image: url('imagenes/torta\ manjar\ v2.jpg');
+}
+.torta-circular-vainilla {
+    background-image: url('imagenes/torta\ vainilla.webp');
+}
+
+/* Postres Individuales */
+.mousse-chocolate {
+    background-image: url('imagenes/mousse.jpg');
+}
+.tiramisu {
+    background-image: url('imagenes/tiramisu.jpg');
+}
+
+/* Sin Azúcar */
+.torta-naranja-sin-azucar {
+    background-image: url('imagenes/torta\ naranja.jpg');
+}
+.cheesecake-sin-azucar {
+    background-image: url('imagenes/cheesecake\ frutilla.webp');
+}
+
+/* Tradicional */
+.empanada-manzana {
+    background-image: url('imagenes/empanada\ manzana.jpg');
+}
+.tarta-santiago {
+    background-image: url('imagenes/tarta\ santiago.jpg');
+}
+
+/* Sin Gluten */
+.brownie-sin-gluten {
+    background-image: url('imagenes/brownie.avif');
+}
+.pan-sin-gluten {
+    background-image: url('imagenes/pan\ sin\ gluten.jpg');
+}
+
+/* Veganos */
+.torta-vegana-chocolate {
+    background-image: url('imagenes/chocolate\ vegano.jpg');
+}
+.galletas-avena-veganas {
+    background-image: url('imagenes/galleta\ vegana.jpg');
+}
+
+/* Tortas Especiales */
+.torta-cumpleanos {
+    background-image: url('imagenes/torta\ hbd.jpg');
+}
+.torta-boda {
+    background-image: url('imagenes/torta\ boda.avif');
+}
