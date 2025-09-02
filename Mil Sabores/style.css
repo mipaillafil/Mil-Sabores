@@ -72,7 +72,7 @@ nav a:hover {
 }
 
 .banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagenes/torta\ banner.avif');
+    background: linear-gradient(#00000080, #00000080), url('imagenes/torta\ banner.avif');
     background-size: cover;
     background-position: center;
     height: 500px;
@@ -98,7 +98,7 @@ nav a:hover {
     margin-right: auto;
 }
 
-.btn-products button {
+.btn-productos button {
     background-color: #8B4513;
     color: #fff;
     padding: 10px 20px;
@@ -113,7 +113,7 @@ nav a:hover {
     background-color: #FFC0CB;
 }
 
-.title-section {
+.titulo-seccion {
     text-align: center;
     margin-bottom: 40px;
     font-family:'Pacifico', cursive;
@@ -121,14 +121,14 @@ nav a:hover {
     color: #8B4513;
 }
 
-.categories-grid {
+.categorias-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
     margin-bottom: 40px;
 }
 
-.category-card {
+.categoria-card {
     background: linear-gradient(#00000066, #00000066);
     border-radius: 15px;
     overflow: hidden;
@@ -145,11 +145,11 @@ nav a:hover {
     cursor: pointer;
 }
 
-.category-card:hover {
+.categoria-card:hover {
     transform: translateY(-5px);
 }
 
-.category-card h3 {
+.categoria-card h3 {
     font-size: 2rem;
     font-weight: 800;
     color: #FFFF;
@@ -159,7 +159,7 @@ nav a:hover {
 
 }
 
-.category-card p {
+.categoria-card p {
     color: #fff;
     font-size: 1.1rem;
     max-width: 80%;
@@ -188,25 +188,25 @@ nav a:hover {
     background-position: center;
 }
 
-.products-grid {
+.productos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 30px;
     margin-bottom: 60px;
 }
 
-.product-card {
+.producto-card {
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px #0000001a;
 }
 
-.product-card:hover {
+.producto-card:hover {
     transform: translateY(-5px);
 }
 
-.product-img {
+.producto-img {
     height: 200px;
     background-color: #f5f5f5;
     background-size: cover;
@@ -217,26 +217,26 @@ nav a:hover {
     padding: 20px;
 }
 
-.title-product {
+.titulo-producto {
     font-size: 1.2rem;
     margin-bottom: 10px;
     color: #8B4513;
 }
 
-.price {
+.precio {
     font-weight: 700;
     color: #5D4037;
     margin-bottom: 15px;
 }
 
-.description {
+.descripcion {
     color: #B0BEC5;
     margin-bottom: 15px;
     font-size: .9rem;
 }
 
 
-.product-card button {
+.producto-card button {
     background-color: #8B4513;
     color: #fff;
     padding: 10px 20px;
@@ -247,18 +247,18 @@ nav a:hover {
     transition: all 0.3s;
 }
 
-.product-card button:hover {
+.producto-card button:hover {
     background-color: #FFC0CB;
 }
 
-.promotions {
+.promociones {
     background-color: #FFC0CB;
     padding: 60px 0;
     text-align: center;
     margin-bottom: 60px;
 }
 
-.promotion-cards {
+.promociones-cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -266,7 +266,7 @@ nav a:hover {
     margin-top: 30px;
 }
 
-.promotion-card {
+.promocion-card {
     background-color: #FFFF;
     border-radius: 10px;
     padding: 30px;
@@ -274,7 +274,7 @@ nav a:hover {
     box-shadow: 0 4px 6px #0000001a;
 }
 
-.promotion-card h3 {
+.promocion-card h3 {
     color: #8B4513;
     margin-bottom: 15px;
 }
