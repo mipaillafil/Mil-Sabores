@@ -439,3 +439,250 @@ footer {
 .torta-boda {
     background-image: url('imagenes/torta\ boda.avif');
 }
+
+
+
+/* INICIO SESIÓN */
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #FFF5E1;
+    color: #5D4037;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: linear-gradient(rgba(255, 245, 225, 0.9), rgba(255, 245, 225, 0.9));
+    background-size: cover;
+    background-position: center;
+}
+
+.login-container {
+    max-width: 450px;
+    width: 100%;
+    padding: 40px 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(139, 69, 19, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.login-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: linear-gradient(90deg, #8B4513, #FFC0CB, #8B4513);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-header .logo {
+    margin-bottom: 15px;
+}
+
+.login-header .logo img {
+    height: 80px;
+    border-radius: 50%;
+}
+
+.login-header h1 {
+    font-family: 'Pacifico', cursive;
+    color: #8B4513;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.login-header p {
+    color: #5D4037;
+    font-size: 1.1rem;
+}
+
+.login-form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #8B4513;
+    font-size: 1.1rem;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 15px 20px;
+    border: 2px solid #D2B48C;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #5D4037;
+    background-color: #FFF5E1;
+    transition: all 0.3s;
+    font-family: 'Lato', sans-serif;
+}
+
+.login-form input[type="email"]:focus,
+.login-form input[type="password"]:focus {
+    outline: none;
+    border-color: #8B4513;
+    box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.2);
+}
+
+.login-form input::placeholder {
+    color: #B0BEC5;
+    font-style: italic;
+}
+
+.form-options {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #5D4037;
+    font-weight: 500;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    height: 20px;
+    width: 20px;
+    background-color: #FFF5E1;
+    border: 2px solid #D2B48C;
+    border-radius: 5px;
+    margin-right: 10px;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #8B4513;
+    border-color: #8B4513;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.separator {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #D2B48C, transparent);
+    margin: 25px 0;
+}
+
+.login-btn {
+    width: 100%;
+    background-color: #8B4513;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.login-btn:hover {
+    background-color: #FFC0CB;
+    color: #8B4513;
+    transform: translateY(-2px);
+}
+
+.login-footer {
+    text-align: center;
+}
+
+.catalog-link {
+    display: inline-block;
+    background-color: #FFC0CB;
+    color: #8B4513;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.catalog-link:hover {
+    background-color: #8B4513;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.login-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-links a {
+    color: #5D4037;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 0.9rem;
+}
+
+.login-links a:hover {
+    color: #8B4513;
+}
+
+.login-links strong {
+    color: #8B4513;
+}
+
+/* Responsivo */
+@media (max-width: 500px) {
+    .login-container {
+        padding: 30px 20px;
+    }
+    
+    .login-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .login-header p {
+        font-size: 1rem;
+    }
+}
