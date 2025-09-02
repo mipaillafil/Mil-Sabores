@@ -8,19 +8,139 @@
 </head>
 <body>
     <header>
-        <div id="logo">
-            <img src="imagenes/logo.png" alt="">
-        </div>
-        <div id="barra-navegacion">
-            <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Productos</a>
-                <a href="#">Promociones</a>
-                <a href="#">Blog</a>
-                <a href="#">Contactos</a>
-            </nav>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="imagenes/logo.png" alt="Logo Pasteleria Mil Sabores">
+                </div>
+                <nav>
+                    <a href="#">Inicio</a>
+                    <a href="#">Productos</a>
+                    <a href="#">Promociones</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contacto</a>
+                </nav>
+                <div class="btn-sesion">
+                    <button>Iniciar Sesión</button>
+                </div>
+            </div>
         </div>
     </header>
-    
+    <section class="banner">
+        <div class="banner-content">
+            <h1>50 años endulzando momentos</h1>
+            <p>Descubre la tradición y el sabor de la repostería chilena con nuestras deliciosas tortas y postres artesanales</p>
+            <div class="btn-products">
+                <button>Ver Productos</button>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <h2 class="title-section">Nuestras Categorías</h2>
+        <div class="categories-grid">
+            <div class="category-card tortas-cuadradas">
+                <h3>TORTAS CUADRADAS</h3>
+                <p>Perfectas para ocasiones especiales</p>
+            </div>
+            <div class="category-card tortas-circulares">
+                <h3>TORTAS CIRCULARES</h3>
+                <p>Clásicas y deliciosas</p>
+            </div>
+            <div class="category-card postres">
+                <h3>POSTRES INDIVIDUALES</h3>
+                <p>Pequeños placeres para cada día</p>
+            </div>
+            <div class="category-card especial">
+                <h3>PRODUCTOS ESPECIALES</h3>
+                <p>Sin azúcar, sin gluten y veganos</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="container">
+        <h2 class="title-section">Productos Destacados</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-img" style="background-image: url(imagenes/torta\ chocolate.webp);"></div>
+                <div class="info">
+                    <h3 class="title-product">Torta Cuadrada de Chocolate</h3>
+                    <p class="price">$45.000</p>
+                    <p class="description">Deliciosa torta de chocolate con capas de ganache y un toque de avellanas. Personalizable con mensajes especiales.</p>
+                    <button class="add">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img" style="background-image: url(imagenes/torta\ vainilla.webp);"></div>
+                <div class="info">
+                    <h3 class="title-product">Torta Circular de Vainilla</h3>
+                    <p class="price">$40.000</p>
+                    <p class="description">Bizcocho de vainilla clásico relleno con crema pastelera y cubierto con un glaseado dulce, perfecto para cualquier ocasión.</p>
+                    <button class="add">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img" style="background-image: url(imagenes/mousse.jpg);"></div>
+                <div class="info">
+                    <h3 class="title-product">Mousse de Chocolate</h3>
+                    <p class="price">$5.000</p>
+                    <p class="description">Postre individual cremoso y suave, hecho con chocolate de alta calidad, ideal para los amantes del chocolate </p>
+                    <button class="add">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="promotions">
+        <section class="container">
+            <h2 class="title-section">Promociones Especiales</h2>
+            <div class="promotion-cards">
+                <div class="promotion-card">
+                    <h3>50% de Descuento</h3>
+                    <p>Para usuarios mayores de 50 años en todos nuestros productos</p>
+                </div>
+                <div class="promotion-card">
+                    <h3>10% de Descuento</h3>
+                    <p>Regístrate con el código "FELICES50" y disfruta de un descuento permanente</p>
+                </div>
+                <div class="promotion-card">
+                    <h3>Tortas Gratis para Estudiantes</h3>
+                    <p>Estudiantes de Duoc UC reciben torta gratis en su cumpleaños al registrarse con correo institucional</p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Pastelería Mil Sabores</h3>
+                    <p>50 años endulzando momentos especiales con la mejor repostería chilena.</p>
+                    <div class="social-icons">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">X</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Categorías</a></li>
+                        <li><a href="#">Promociones</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contáctanos</h3>
+                    <p>Dirección: Av. Dulce 123, Santiago</p>
+                    <p>Teléfono: +56 2 2345 6789</p>
+                    <p>Email: info@milsabores.cl</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Pastelería Mil Sabores - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
