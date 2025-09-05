@@ -443,8 +443,7 @@ footer {
 
 
 /* INICIO SESIÓN */
-
-body {
+.log-in {
     font-family: "Lato", sans-serif;
     background-color: #FFF5E1;
     color: #5D4037;
