@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registrarse</title>
+</head>
+<body>
+    <div class="registro">
+        <form action="#" id="formulario">
+            <div class="logo">
+                <img src="imagenes/logo.png" alt="Logo">
+            </div>
+            <h1>Formulario de registro</h1>
+            <p>¿No tienes una cuenta? Crea una cuenta propia, toma menos de un minuto.</p>
+            <div class="row">
+                <label for="mail">Email:</label>
+                <input type="email" name="mail" id="mail" placeholder="juan@mail.com" class="error">
+            </div>
+            <div class="row">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Juan" class="error">
+            </div>
+            <div class="row">
+                <label for="usuario">Usuario:</label>
+                <input type="text" name="usuario" id="usuario" placeholder="juanito" class="error">
+            </div>
+            <div class="row">
+                <label for="cumpleanios">Cumpleaños:</label>
+                <input type="date" name="cumpleanios" id="cumpleanios" placeholder="01/01/2001" class="error">
+            </div>
+            <div class="row">
+                <label for="clave1">Contraseña:</label>
+                <input type="password" name="clave1" id="clave1" placeholder="clave123" class="error">
+            </div>
+            <div class="row">
+                <label for="clave2">Confirmar contraseña:</label>
+                <input type="password" name="clave2" id="clave2" placeholder="clave123" class="error">
+            </div>
+            <div class="row">
+                <label class="checkbox-container">
+                    <input type="checkbox" id="tyc">
+                    <span class="checkmark"></span>
+                    Acepto los Términos y condiciones
+                </label>
+            </div>
+            <div class="row">
+                <button type="reset">Limpiar</button>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+        <div class="iniciar-sesion">
+            <p>¿Ya tienes una cuenta? <a href="inicio_sesion.html">Iniciar Sesión</a></p>
+        </div>
+        <div id="errores"></div>
+            <script src="functions.js"></script>
+        </div>  
+</body>
+</html>

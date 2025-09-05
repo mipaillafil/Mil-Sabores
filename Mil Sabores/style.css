@@ -109,7 +109,7 @@ nav a:hover {
     transition: all 0.3s;
 }
 
-.btn-products button:hover {
+.btn-productos button:hover {
     background-color: #FFC0CB;
 }
 
@@ -685,4 +685,90 @@ body {
     .login-header p {
         font-size: 1rem;
     }
+}
+
+/* Registro */
+.registro form {
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0px 0px 5px #00000069;
+    border-radius: 15px;
+    padding: 3rem;
+    width: 40vw;
+}
+
+.registro .logo{
+    margin-bottom: 10px;
+}
+
+.registro .logo img {
+    height: 90px;
+}
+
+.registro label {
+    margin-bottom: 2px;
+}
+
+.registro input {
+    width: 50%;
+    padding: 9px;
+    border: 2px solid #D2B48C;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #5D4037;
+    background-color: #FFF5E1;
+    transition: all 0.3s;
+    font-family: 'Lato', sans-serif;
+}
+
+.registro input::placeholder {
+    color: #BBCBD2;
+    font-weight: 400;
+}
+.registro h1 {
+    font-family: 'Pacifico', cursive;
+    color: #8B4513;
+    font-weight: 300;
+}
+.registro .row {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.registro button {
+    background-color: #8B4513;
+    color: #ffffff;
+    padding: 1rem;
+    width: 49%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.registro button:hover {
+    background-color: #FFC0CB;
+}
+
+.iniciar-sesion {
+    text-align: center;
+}
+
+.iniciar-sesion p {
+    margin-top: 20px;
+}
+
+.registro a:hover{
+    color: #FFC0CB;
+}
+
+.registro .error{
+    outline: 1px red solid;
+    background-color: #ff000044;
 }
