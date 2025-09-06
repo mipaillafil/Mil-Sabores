@@ -771,3 +771,249 @@ footer {
     outline: 1px red solid;
     background-color: #ff000044;
 }
+
+
+/* CSS DEL BLOG */
+
+.blog-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 40px;
+    padding: 20px 0;
+}
+
+.filter-btn {
+    background-color: #FFF5E1;
+    color: #8B4513;
+    border: 2px solid #D2B48C;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: #8B4513;
+    color: #fff;
+    border-color: #8B4513;
+}
+
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.blog-card {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(139, 69, 19, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(139, 69, 19, 0.2);
+}
+
+.blog-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Imágenes de los artículos del blog */
+.receta-torta-chocolate {
+    background-image: url('imagenes/chocolate\ vegano.jpg');
+}
+
+.consejo-decoracion {
+    background-image: url('imagenes/torta\ decoracion.jpg');
+}
+
+.competencia-reposteria {
+    background-image: url('imagenes/cocineros\ duoc.jpg');
+}
+
+.receta-vegana {
+    background-image: url('imagenes/brownie.avif');
+}
+
+.tendencias-reposteria {
+    background-image: url('imagenes/tendencias.jpg');
+}
+
+.evento-taller {
+    background-image: url('imagenes/deco\ cupcake.webp');
+}
+
+.blog-content {
+    padding: 25px;
+}
+
+.blog-category {
+    display: inline-block;
+    background-color: #FFC0CB;
+    color: #8B4513;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.blog-content h3 {
+    color: #8B4513;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.blog-excerpt {
+    color: #5D4037;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.blog-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #B0BEC5;
+}
+
+.blog-read-more {
+    display: inline-block;
+    color: #8B4513;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.blog-read-more:hover {
+    color: #FFC0CB;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 40px 0;
+}
+
+.page-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FFF5E1;
+    color: #8B4513;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+.page-link:hover,
+.page-link.active {
+    background-color: #8B4513;
+    color: #fff;
+}
+
+
+.newsletter {
+    background-color: #FFC0CB;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.newsletter-content h2 {
+    color: #8B4513;
+    margin-bottom: 15px;
+    font-family: 'Pacifico', cursive;
+    font-size: 2.2rem;
+}
+
+.newsletter-content p {
+    color: #5D4037;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter-form input {
+    flex: 1;
+    min-width: 250px;
+    padding: 15px 20px;
+    border: 2px solid #D2B48C;
+    border-radius: 30px;
+    font-size: 1rem;
+    color: #5D4037;
+    background-color: #fff;
+}
+
+.newsletter-form button {
+    background-color: #8B4513;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #5D4037;
+}
+
+
+nav a.active {
+    color: #FFC0CB;
+}
+
+
+@media (max-width: 768px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .blog-filters {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-btn {
+        width: 80%;
+        text-align: center;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .newsletter-form input,
+    .newsletter-form button {
+        width: 100%;
+    }
+}
