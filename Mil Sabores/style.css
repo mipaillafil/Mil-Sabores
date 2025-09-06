@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -10,6 +11,7 @@ body {
     font-family: "Lato", sans-serif;
     background-color: #FFF5E1;
     color: #B0BEC5;
+    overflow-x: hidden;
 }
 
 .container {
@@ -40,7 +42,7 @@ header img {
     margin: 1vh;
 }
 
-nav  {
+nav {
     display: flex;
 }
 
@@ -71,7 +73,7 @@ nav a:hover {
     background-color: #FFC0CB;
 }
 
-.banner {
+.banner-index {
     background: linear-gradient(#00000080, #00000080), url('imagenes/torta\ banner.avif');
     background-size: cover;
     background-position: center;
@@ -84,13 +86,13 @@ nav a:hover {
     margin-bottom: 40px;
 }
 
-.banner h1 {
+.banner-index h1 {
     font-family: "Pacifico", cursive;
     font-size: 3.5rem;
     margin-bottom: 20px;
 }
 
-.banner p {
+.banner-index p {
     font-size: 1.2rem;
     margin-bottom: 30px;
     max-width: 700px;
@@ -116,7 +118,7 @@ nav a:hover {
 .titulo-seccion {
     text-align: center;
     margin-bottom: 40px;
-    font-family:'Pacifico', cursive;
+    font-family: 'Pacifico', cursive;
     font-size: 2.5rem;
     color: #8B4513;
 }
@@ -182,6 +184,7 @@ nav a:hover {
     background-size: cover;
     background-position: center;
 }
+
 .especial {
     background: linear-gradient(#00000066, #00000066), url(imagenes/vegano.jpeg);
     background-size: cover;
@@ -291,7 +294,7 @@ footer {
     gap: 30px;
 }
 
-.footer-section h3{
+.footer-section h3 {
     margin-bottom: 20px;
     font-size: 1.2rem;
 }
@@ -299,12 +302,12 @@ footer {
 .footer-section ul {
     list-style: none;
 }
-        
+
 .footer-section ul li {
     margin-bottom: 10px;
 }
 
-.footer-section a{
+.footer-section a {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s;
@@ -337,7 +340,48 @@ footer {
     background-color: #ffffff96;
 }
 
-/* CSS DE PRODUCTOS XD */
+/* CSS DE PRODUCTOS */
+.carrito-icon {
+    position: relative;
+    margin-left: 20px;
+}
+
+.carrito-icono span {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: var(--color-accent-pink);
+    color: var(--color-white);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.banner {
+    background: linear-gradient(#00000099, #00000099), url(imagenes/torta\ banner.avif);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.banner h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+}
+
+.banner p {
+    margin-bottom: 8px;
+}
 
 .nav-categorias {
     background-color: #8B4513;
@@ -347,7 +391,7 @@ footer {
     position: sticky;
     top: 90px;
     z-index: 99;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav-categorias a {
@@ -380,6 +424,7 @@ footer {
 .torta-cuadrada-chocolate {
     background-image: url('imagenes/torta\ chocolate.webp');
 }
+
 .torta-cuadrada-frutas {
     background-image: url('imagenes/torta\ cuadrada.jpg');
 }
@@ -388,6 +433,7 @@ footer {
 .torta-circular-manjar {
     background-image: url('imagenes/torta\ manjar\ v2.jpg');
 }
+
 .torta-circular-vainilla {
     background-image: url('imagenes/torta\ vainilla.webp');
 }
@@ -396,6 +442,7 @@ footer {
 .mousse-chocolate {
     background-image: url('imagenes/mousse.jpg');
 }
+
 .tiramisu {
     background-image: url('imagenes/tiramisu.jpg');
 }
@@ -404,6 +451,7 @@ footer {
 .torta-naranja-sin-azucar {
     background-image: url('imagenes/torta\ naranja.jpg');
 }
+
 .cheesecake-sin-azucar {
     background-image: url('imagenes/cheesecake\ frutilla.webp');
 }
@@ -412,6 +460,7 @@ footer {
 .empanada-manzana {
     background-image: url('imagenes/empanada\ manzana.jpg');
 }
+
 .tarta-santiago {
     background-image: url('imagenes/tarta\ santiago.jpg');
 }
@@ -420,6 +469,7 @@ footer {
 .brownie-sin-gluten {
     background-image: url('imagenes/brownie.avif');
 }
+
 .pan-sin-gluten {
     background-image: url('imagenes/pan\ sin\ gluten.jpg');
 }
@@ -428,6 +478,7 @@ footer {
 .torta-vegana-chocolate {
     background-image: url('imagenes/chocolate\ vegano.jpg');
 }
+
 .galletas-avena-veganas {
     background-image: url('imagenes/galleta\ vegana.jpg');
 }
@@ -436,6 +487,7 @@ footer {
 .torta-cumpleanos {
     background-image: url('imagenes/torta\ hbd.jpg');
 }
+
 .torta-boda {
     background-image: url('imagenes/torta\ boda.avif');
 }
@@ -576,7 +628,7 @@ footer {
     transition: all 0.3s;
 }
 
-.checkbox-container input:checked ~ .checkmark {
+.checkbox-container input:checked~.checkmark {
     background-color: #8B4513;
     border-color: #8B4513;
 }
@@ -587,7 +639,7 @@ footer {
     display: none;
 }
 
-.checkbox-container input:checked ~ .checkmark:after {
+.checkbox-container input:checked~.checkmark:after {
     display: block;
 }
 
@@ -676,32 +728,43 @@ footer {
     .login-container {
         padding: 30px 20px;
     }
-    
+
     .login-header h1 {
         font-size: 1.8rem;
     }
-    
+
     .login-header p {
         font-size: 1rem;
     }
 }
 
 /* Registro */
-.registro form {
-    background-color: #ffff;
+.registro {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 1rem;
-    box-shadow: 0px 0px 5px #00000069;
-    border-radius: 15px;
-    padding: 3rem;
-    width: 40vw;
+    justify-content: center;
+    min-height: 100vh;
 }
 
-.registro .logo{
-    margin-bottom: 10px;
+.registro form {
+    background-color: #ffff;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem 1.5rem;
+    box-shadow: 0px 0px 5px #00000069;
+    border-radius: 15px;
+    padding: 5vh 3rem;
+    width: 600px;
+    max-width: 90%;
+    margin-top: 10px;
+}
+
+.registro h1, 
+.registro p, 
+.registro .logo {
+    grid-column: span 2;
+    text-align: center;
 }
 
 .registro .logo img {
@@ -713,8 +776,8 @@ footer {
 }
 
 .registro input {
-    width: 50%;
-    padding: 9px;
+    width: 100%;
+    padding: 10px;
     border: 2px solid #D2B48C;
     border-radius: 10px;
     font-size: 1rem;
@@ -728,53 +791,80 @@ footer {
     color: #BBCBD2;
     font-weight: 400;
 }
+
 .registro h1 {
     font-family: 'Pacifico', cursive;
     color: #8B4513;
     font-weight: 300;
 }
+
 .registro .row {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-between;
+}
+
+#btn-codigo {
+    background-color: #FFC0CB;
+    color: #884513;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+#btn-codigo:hover {
+    background-color: #884513;
+    color: #fff;
 }
 
 .registro button {
     background-color: #8B4513;
     color: #ffffff;
     padding: 1rem;
-    width: 49%;
+    width: auto;
+    display: block;
     border: none;
     outline: none;
     cursor: pointer;
     border-radius: 30px;
+    flex: 1;
 }
 
 .registro button:hover {
     background-color: #FFC0CB;
 }
 
+.registro .row.botones {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
 .iniciar-sesion {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .iniciar-sesion p {
     margin-top: 20px;
 }
 
-.registro a:hover{
+.registro a:hover {
     color: #FFC0CB;
 }
 
-.registro .error{
+.registro .error {
     outline: 1px red solid;
     background-color: #ff000044;
 }
 
 
 /* CSS DEL BLOG */
-
 .blog-filters {
     display: flex;
     justify-content: center;
@@ -997,23 +1087,284 @@ nav a.active {
     .blog-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .blog-filters {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .filter-btn {
         width: 80%;
         text-align: center;
     }
-    
+
     .newsletter-form {
         flex-direction: column;
     }
-    
+
     .newsletter-form input,
     .newsletter-form button {
         width: 100%;
     }
+}
+
+/* CARRITO */
+.banner-carrito {
+    background: linear-gradient(#00000099, #00000099), url(imagenes/torta\ banner.avif);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.banner-carrito h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+}
+
+.carrito-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin-bottom: 60px;
+    align-items: start;
+}
+
+@media (max-width: 900px) {
+    .carrito-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.carrito-items {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px #0000001a;
+    padding: 20px;
+}
+
+.carrito-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #B0BEC5;
+}
+
+.titulo-carrito {
+    font-size: 1.5rem;
+    color: #884513;
+}
+
+.carrito-item {
+    display: flex;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.img-item {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px;
+    flex-shrink: 0;
+}
+
+.img-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.desc-item {
+    flex-grow: 1;
+}
+
+.nombre-item {
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #884513;
+}
+
+.categoria-item {
+    color: #B0BEC5;
+    font-size: .9rem;
+    margin-bottom: 10px;
+}
+
+.precio-item {
+    font-weight: 700;
+    color: #5D4037;
+}
+
+.carrito-acciones {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.cantidad {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.btn-cantidad {
+    width: 30px;
+    height: 30px;
+    background-color: #FFF5E1;
+    border: 1px solid var(#B0BEC5);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.ipt-cantidad {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    margin: 0 5px;
+    border: 1px solid #B0BEC5;
+    border-radius: 5px;
+}
+
+.btn-eliminar {
+    background: none;
+    border: none;
+    color: #ff4757;
+    cursor: pointer;
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+}
+
+.carrito-resumen {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px #0000001a;
+    padding: 18px;
+    height: fit-content;
+    top: 100px;
+}
+
+.resumen-titulo {
+    font-size: 1.5rem;
+    color: #884513;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #B0BEC5;
+}
+
+.resumen-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.resumen-total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    padding-top: 15px;
+    border-top: 1px solid #B0BEC5;
+}
+
+.descuento {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 2px 8px;
+    font-size: .8rem;
+    margin-left: 10px;
+}
+
+.cupon-descuento {
+    margin: 20px 0;
+}
+
+.cupon-descuento label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #884513;
+}
+
+.cupon-input {
+    display: flex;
+    gap: 10px;
+}
+
+.cupon-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #B0BEC5;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.btn-cupon {
+    background-color: #FFC0CB;
+    color: #884513;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+.btn-cupon:hover {
+    background-color: #884513;
+    color: #fff;
+}
+
+.btn-pago {
+    width: 100%;
+    padding: 15px;
+    background-color: #884513;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+.btn-pago:hover {
+    background-color: #FFC0CB;
+    transform: translateY(-2px);
+}
+
+.continuar-compra {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #8B4513;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.continuar-compra:hover {
+    color: #FFC0CB;
+}
+
+.personalizar-item {
+    background-color: #f8f8f8;
+    border-left: 4px solid #FFC0CB;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-size: .9rem;
 }
