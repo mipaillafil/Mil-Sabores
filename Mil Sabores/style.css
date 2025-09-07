@@ -1028,6 +1028,20 @@ footer {
     color: #fff;
 }
 
+.page-link:last-child {
+    width: auto;
+    padding: 0 20px;
+    min-width: 120px;
+    border-radius: 30px;
+}
+
+.page-link:last-child:hover {
+    background-color: #8B4513;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(139, 69, 19, 0.3);
+}
+
 
 .newsletter {
     background-color: #FFC0CB;
