@@ -408,7 +408,14 @@ footer {
 
 /* Estilos para las secciones de categoría*/
 .categoria-productos {
-    margin-bottom: 60px;
+    text-align: center;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 350px));
+    justify-content: center;
+    gap: 30px;
 }
 
 /*Estilos para el nuevo código de producto*/
