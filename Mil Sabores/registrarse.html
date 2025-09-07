@@ -39,13 +39,21 @@
                 <input type="password" name="clave2" id="clave2" placeholder="clave123" class="error">
             </div>
             <div class="row">
+                <button type="button" id="btn-codigo">¿Tienes un código promocional?</button>
+            </div>
+
+            <div class="row" id="codigo-promocional" style="display: none;">
+                <label for="promo">Código promocional:</label>
+                <input type="text" name="promo" id="promo" placeholder="PROMO2025">
+            </div>
+            <div class="row">
                 <label class="checkbox-container">
                     <input type="checkbox" id="tyc">
                     <span class="checkmark"></span>
                     Acepto los Términos y condiciones
                 </label>
             </div>
-            <div class="row">
+            <div class="row botones">
                 <button type="reset">Limpiar</button>
                 <button type="submit">Enviar</button>
             </div>

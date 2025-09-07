@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -10,6 +11,7 @@ body {
     font-family: "Lato", sans-serif;
     background-color: #FFF5E1;
     color: #B0BEC5;
+    overflow-x: hidden;
 }
 
 .container {
@@ -40,7 +42,7 @@ header img {
     margin: 1vh;
 }
 
-nav  {
+nav {
     display: flex;
 }
 
@@ -71,7 +73,7 @@ nav a:hover {
     background-color: #FFC0CB;
 }
 
-.banner {
+.banner-index {
     background: linear-gradient(#00000080, #00000080), url('imagenes/torta\ banner.avif');
     background-size: cover;
     background-position: center;
@@ -84,13 +86,13 @@ nav a:hover {
     margin-bottom: 40px;
 }
 
-.banner h1 {
+.banner-index h1 {
     font-family: "Pacifico", cursive;
     font-size: 3.5rem;
     margin-bottom: 20px;
 }
 
-.banner p {
+.banner-index p {
     font-size: 1.2rem;
     margin-bottom: 30px;
     max-width: 700px;
@@ -116,7 +118,7 @@ nav a:hover {
 .titulo-seccion {
     text-align: center;
     margin-bottom: 40px;
-    font-family:'Pacifico', cursive;
+    font-family: 'Pacifico', cursive;
     font-size: 2.5rem;
     color: #8B4513;
 }
@@ -182,6 +184,7 @@ nav a:hover {
     background-size: cover;
     background-position: center;
 }
+
 .especial {
     background: linear-gradient(#00000066, #00000066), url(imagenes/vegano.jpeg);
     background-size: cover;
@@ -291,7 +294,7 @@ footer {
     gap: 30px;
 }
 
-.footer-section h3{
+.footer-section h3 {
     margin-bottom: 20px;
     font-size: 1.2rem;
 }
@@ -299,12 +302,12 @@ footer {
 .footer-section ul {
     list-style: none;
 }
-        
+
 .footer-section ul li {
     margin-bottom: 10px;
 }
 
-.footer-section a{
+.footer-section a {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s;
@@ -337,7 +340,48 @@ footer {
     background-color: #ffffff96;
 }
 
-/* CSS DE PRODUCTOS XD */
+/* CSS DE PRODUCTOS */
+.carrito-icon {
+    position: relative;
+    margin-left: 20px;
+}
+
+.carrito-icono span {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: var(--color-accent-pink);
+    color: var(--color-white);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.banner {
+    background: linear-gradient(#00000099, #00000099), url(imagenes/torta\ banner.avif);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.banner h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+}
+
+.banner p {
+    margin-bottom: 8px;
+}
 
 .nav-categorias {
     background-color: #8B4513;
@@ -347,7 +391,7 @@ footer {
     position: sticky;
     top: 90px;
     z-index: 99;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav-categorias a {
@@ -384,6 +428,7 @@ footer {
 .torta-cuadrada-chocolate {
     background-image: url('imagenes/torta\ chocolate.webp');
 }
+
 .torta-cuadrada-frutas {
     background-image: url('imagenes/torta\ cuadrada.jpg');
 }
@@ -392,6 +437,7 @@ footer {
 .torta-circular-manjar {
     background-image: url('imagenes/torta\ manjar\ v2.jpg');
 }
+
 .torta-circular-vainilla {
     background-image: url('imagenes/torta\ vainilla.webp');
 }
@@ -400,6 +446,7 @@ footer {
 .mousse-chocolate {
     background-image: url('imagenes/mousse.jpg');
 }
+
 .tiramisu {
     background-image: url('imagenes/tiramisu.jpg');
 }
@@ -408,6 +455,7 @@ footer {
 .torta-naranja-sin-azucar {
     background-image: url('imagenes/torta\ naranja.jpg');
 }
+
 .cheesecake-sin-azucar {
     background-image: url('imagenes/cheesecake\ frutilla.webp');
 }
@@ -416,6 +464,7 @@ footer {
 .empanada-manzana {
     background-image: url('imagenes/empanada\ manzana.jpg');
 }
+
 .tarta-santiago {
     background-image: url('imagenes/tarta\ santiago.jpg');
 }
@@ -424,6 +473,7 @@ footer {
 .brownie-sin-gluten {
     background-image: url('imagenes/brownie.avif');
 }
+
 .pan-sin-gluten {
     background-image: url('imagenes/pan\ sin\ gluten.jpg');
 }
@@ -432,6 +482,7 @@ footer {
 .torta-vegana-chocolate {
     background-image: url('imagenes/chocolate\ vegano.jpg');
 }
+
 .galletas-avena-veganas {
     background-image: url('imagenes/galleta\ vegana.jpg');
 }
@@ -440,6 +491,7 @@ footer {
 .torta-cumpleanos {
     background-image: url('imagenes/torta\ hbd.jpg');
 }
+
 .torta-boda {
     background-image: url('imagenes/torta\ boda.avif');
 }
@@ -580,7 +632,7 @@ footer {
     transition: all 0.3s;
 }
 
-.checkbox-container input:checked ~ .checkmark {
+.checkbox-container input:checked~.checkmark {
     background-color: #8B4513;
     border-color: #8B4513;
 }
@@ -591,7 +643,7 @@ footer {
     display: none;
 }
 
-.checkbox-container input:checked ~ .checkmark:after {
+.checkbox-container input:checked~.checkmark:after {
     display: block;
 }
 
@@ -680,32 +732,43 @@ footer {
     .login-container {
         padding: 30px 20px;
     }
-    
+
     .login-header h1 {
         font-size: 1.8rem;
     }
-    
+
     .login-header p {
         font-size: 1rem;
     }
 }
 
 /* Registro */
-.registro form {
-    background-color: #ffff;
+.registro {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 1rem;
-    box-shadow: 0px 0px 5px #00000069;
-    border-radius: 15px;
-    padding: 3rem;
-    width: 40vw;
+    justify-content: center;
+    min-height: 100vh;
 }
 
-.registro .logo{
-    margin-bottom: 10px;
+.registro form {
+    background-color: #ffff;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem 1.5rem;
+    box-shadow: 0px 0px 5px #00000069;
+    border-radius: 15px;
+    padding: 5vh 3rem;
+    width: 600px;
+    max-width: 90%;
+    margin-top: 10px;
+}
+
+.registro h1, 
+.registro p, 
+.registro .logo {
+    grid-column: span 2;
+    text-align: center;
 }
 
 .registro .logo img {
@@ -717,8 +780,8 @@ footer {
 }
 
 .registro input {
-    width: 50%;
-    padding: 9px;
+    width: 100%;
+    padding: 10px;
     border: 2px solid #D2B48C;
     border-radius: 10px;
     font-size: 1rem;
@@ -732,53 +795,80 @@ footer {
     color: #BBCBD2;
     font-weight: 400;
 }
+
 .registro h1 {
     font-family: 'Pacifico', cursive;
     color: #8B4513;
     font-weight: 300;
 }
+
 .registro .row {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-between;
+}
+
+#btn-codigo {
+    background-color: #FFC0CB;
+    color: #884513;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+#btn-codigo:hover {
+    background-color: #884513;
+    color: #fff;
 }
 
 .registro button {
     background-color: #8B4513;
     color: #ffffff;
     padding: 1rem;
-    width: 49%;
+    width: auto;
+    display: block;
     border: none;
     outline: none;
     cursor: pointer;
     border-radius: 30px;
+    flex: 1;
 }
 
 .registro button:hover {
     background-color: #FFC0CB;
 }
 
+.registro .row.botones {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
 .iniciar-sesion {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .iniciar-sesion p {
     margin-top: 20px;
 }
 
-.registro a:hover{
+.registro a:hover {
     color: #FFC0CB;
 }
 
-.registro .error{
+.registro .error {
     outline: 1px red solid;
     background-color: #ff000044;
 }
 
 
 /* CSS DEL BLOG */
-
 .blog-filters {
     display: flex;
     justify-content: center;
@@ -1017,269 +1107,23 @@ nav a.active {
     .blog-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .blog-filters {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .filter-btn {
         width: 80%;
         text-align: center;
     }
-    
+
     .newsletter-form {
         flex-direction: column;
     }
-    
+
     .newsletter-form input,
     .newsletter-form button {
         width: 100%;
     }
-}
-
-
-/* PROMOCIONES */
-
-.promociones-container {
-    width: 100%;
-    overflow-x: auto;
-    padding: 20px 0;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-}
-
-.promociones-wrapper {
-    position: relative;
-    width: 100%;
-    margin-bottom: 60px;
-}
-
-.promociones-grid {
-    display: flex;
-    gap: 25px;
-    padding: 10px 20px;
-    flex-wrap: nowrap;
-    min-width: max-content;
-}
-.promocion-card {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(139, 69, 19, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-    min-width: 320px;
-    max-width: 380px;
-    flex-shrink: 0;
-    scroll-snap-align: start;
-}
-
-.promocion-card:hover {
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 15px 30px rgba(139, 69, 19, 0.2);
-}
-
-.promocion-card.destacada {
-    border: 3px solid #FFC0CB;
-    order: -1;
-}
-
-.promocion-badge {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: #8B4513;
-    color: white;
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-weight: 700;
-    font-size: 0.9rem;
-    z-index: 2;
-}
-
-/* Imágenes de promociones */
-.promocion-imagen {
-    height: 180px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-.descuento-mayores {
-    background-image: url('imagenes/persona\ mayor.jpg');
-}
-
-.descuento-registro {
-    background-image: url('imagenes/10porcierto.jpg');
-}
-
-.torta-cumpleanos {
-    background-image: url('imagenes/chef\ torta\ mano.webp');
-}
-
-.oferta-2x1 {
-    background-image: url('imagenes/2x1cupcakesV2.jpg');
-}
-
-.descuento-vegano {
-    background-image: url('imagenes/reposteria\ vegana.jpg');
-}
-
-.envio-gratis {
-    background-image: url('imagenes/delivery.png');
-}
-
-
-.promocion-content {
-    padding: 20px;
-}
-
-.promocion-content h3 {
-    color: #8B4513;
-    font-size: 1.3rem;
-    margin-bottom: 12px;
-}
-
-.promocion-content p {
-    color: #5D4037;
-    margin-bottom: 18px;
-    line-height: 1.5;
-    font-size: 0.95rem;
-}
-
-
-.promocion-details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.promocion-validez {
-    color: #B0BEC5;
-    font-size: 0.85rem;
-    font-style: italic;
-}
-
-
-.btn-promocion {
-    background: #8B4513;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: 700;
-    transition: all 0.3s ease;
-    font-size: 0.9rem;
-    white-space: nowrap;
-}
-
-.btn-promocion:hover {
-    background: #FFC0CB;
-    color: #8B4513;
-    transform: translateY(-2px);
-}
-
-/* Scroll personalizado para el contenedor */
-.promociones-container::-webkit-scrollbar {
-    height: 8px;
-}
-
-.promociones-container::-webkit-scrollbar-track {
-    background: #FFF5E1;
-    border-radius: 10px;
-}
-
-.promociones-container::-webkit-scrollbar-thumb {
-    background: #D2B48C;
-    border-radius: 10px;
-}
-
-.promociones-container::-webkit-scrollbar-thumb:hover {
-    background: #8B4513;
-}
-
-/* Flechas de navegación */
-.promociones-navigation {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 25px;
-    margin-bottom: 40px;
-}
-
-.nav-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #8B4513;
-    color: white;
-    border: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.2rem;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px rgba(139, 69, 19, 0.3);
-    z-index: 10;
-}
-
-.nav-btn.prev-btn {
-    left: 15px;
-}
-
-.nav-btn.next-btn {
-    right: 15px;
-}
-
-.nav-btn:hover:not(:disabled) {
-    background: #FFC0CB;
-    color: #8B4513;
-    transform: translateY(-50%) scale(1.1);
-    box-shadow: 0 6px 12px rgba(139, 69, 19, 0.4);
-}
-
-.nav-btn:disabled {
-    background: #D2B48C;
-    color: #8B4513;
-    cursor: not-allowed;
-    opacity: 0.3;
-    transform: translateY(-50%);
-    box-shadow: none;
-}
-
-
-.promociones-wrapper::before,
-.promociones-wrapper::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 60px;
-    pointer-events: none;
-    z-index: 5;
-    transition: opacity 0.3s ease;
-}
-
-.promociones-wrapper::before {
-    left: 0;
-    background: linear-gradient(to right, #FFF5E1 30%, transparent);
-}
-
-.promociones-wrapper::after {
-    right: 0;
-    background: linear-gradient(to left, #FFF5E1 30%, transparent);
-}
-
-.promociones-wrapper.scroll-start::before,
-.promociones-wrapper.scroll-end::after {
-    opacity: 0.3;
 }

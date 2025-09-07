@@ -69,3 +69,19 @@ form.addEventListener('submit', function (e) {
         errores.innerHTML += p;
     })
 });
+
+// Registro código promocional
+document.addEventListener("DOMContentLoaded", () => {
+    const btnCodigo = document.getElementById("btn-codigo");
+    const campoCodigo = document.getElementById("codigo-promocional");
+
+    btnCodigo.addEventListener("click", () => {
+        if (campoCodigo.style.display === "none") {
+            campoCodigo.style.display = "block";
+            btnCodigo.textContent = "Ocultar código promocional";
+        } else {
+            campoCodigo.style.display = "none";
+            btnCodigo.textContent = "¿Tienes un código promocional?";
+        }
+    });
+});

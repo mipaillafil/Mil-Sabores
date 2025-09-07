@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito De Compras - Pasteleria Mil Sabores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="imagenes/logo.png" alt="Logo Pasteleria Mil Sabores">
+                </div>
+                <nav>
+                    <a href="index.html">Inicio</a>
+                    <a href="productos.html">Productos</a>
+                    <a href="#">Promociones</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+                <div class="btn-sesion">
+                    <a href="inicio_sesion.html">
+                    <button>Iniciar Sesión</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="banner-carrito">
+        <div>
+            <h1>Tu Carrito de Compras</h1>
+        </div>
+    </section>
+    <div class="container">
+        <div class="carrito-container">
+            <div class="carrito-items">
+                <div class="carrito-header">
+                    <h2 class="titulo-carrito">Tus Productos</h2>
+                    <span>3 items</span>
+                </div>
+                <div class="carrito-item">
+                    <div class="img-item">
+                        <img src="imagenes/torta naranja.jpg" alt="Torta de naranja">
+                    </div>
+                    <div class="desc-item">
+                        <h3 class="nombre-item">Torta sin Azúcar de Naranja</h3>
+                        <div class="categoria-item">
+                            <p>Productos Sin Azúcar</p>
+                        </div>
+                        <div class="precio-item">$48.000</div>
+                    </div>
+                    <div class="carrito-acciones">
+                        <div class="cantidad">
+                            <button class="btn-cantidad">-</button>
+                            <input type="text" class="ipt-cantidad" value="1">
+                            <button class="btn-cantidad">+</button>
+                        </div>
+                        <button class="btn-eliminar">🗑️ Eliminar</button>
+                    </div>
+                </div>
+                <div class="carrito-item">
+                    <div class="img-item">
+                        <img src="imagenes/torta cuadrada.jpg" alt="Torta cuadrada de chocolate">
+                    </div>
+                    <div class="desc-item">
+                        <h3 class="nombre-item">Torta Cuadrada de Chocolate</h3>
+                        <div class="categoria-item">
+                            <p>Tortas Cuadradas</p>
+                        </div>
+                        <div class="precio-item">$45.000</div>
+                        <div class="personalizar-item">
+                            <p><strong>Personalización:</strong>"Feliz Cumpleaños María"</p>
+                        </div>
+                    </div>
+                    <div class="carrito-acciones">
+                        <div class="cantidad">
+                            <button class="btn-cantidad">-</button>
+                            <input type="text" class="ipt-cantidad" value="1">
+                            <button class="btn-cantidad">+</button>
+                        </div>
+                        <button class="btn-eliminar">🗑️ Eliminar</button>
+                    </div>
+                </div>
+                <div class="carrito-item">
+                    <div class="img-item">
+                        <img src="imagenes/brownie.avif" alt="Brownie de Chocolate">
+                    </div>
+                    <div class="desc-item">
+                        <h3 class="nombre-item">Brownie Sin Gluten</h3>
+                        <div class="categoria-item">
+                            <p>Productos Sin Glutenr</p>
+                        </div>
+                        <div class="precio-item">$4.000</div>
+                    </div>
+                    <div class="carrito-acciones">
+                        <div class="cantidad">
+                            <button class="btn-cantidad">-</button>
+                            <input type="text" class="ipt-cantidad" value="1">
+                            <button class="btn-cantidad">+</button>
+                        </div>
+                        <button class="btn-eliminar">🗑️ Eliminar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carrito-resumen">
+                <h2 class="resumen-titulo">Resumen de Compra</h2>
+
+                <div class="resumen-item">
+                    <span>Subtotal (3 productos)</span>
+                    <span>$97.000</span>
+                </div>
+
+                <div class="resumen-item">
+                    <span>Descuento <span class="descuento">-30%</span></span>
+                    <span style="color:#4CAF50;">-$29.100</span>
+                </div>
+                <div class="resumen-item">
+                    <span>Envío</span>
+                    <span style="color: #4CAF50;">Gratis</span>
+                </div>
+                <div class="resumen-total">
+                    <span>Total</span>
+                    <span>$67.900 CLP</span>
+                </div>
+                <div class="cupon-descuento">
+                    <label for="cupon">¿Tienes un cupón?</label>
+                    <div class="cupon-input">
+                        <input type="text" id="cupon" placeholder="Ingresa tu cupón">
+                        <button class="btn-cupon">Aplicar</button>
+                    </div>
+                </div>
+                <button class="btn-pago">Proceder al Pago</button>
+                <a href="productos.html" class="continuar-compra">← Seguir comprando</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Pastelería Mil Sabores</h3>
+                    <p>50 años endulzando momentos especiales con la mejor repostería chilena.</p>
+                    <div class="social-icons">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">X</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="#">Promociones</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contáctanos</h3>
+                    <p>Dirección: Av. Dulce 123, Santiago</p>
+                    <p>Teléfono: +56 2 2345 6789</p>
+                    <p>Email: info@milsabores.cl</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Pastelería Mil Sabores - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
