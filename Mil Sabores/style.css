@@ -1368,3 +1368,244 @@ nav a.active {
     border-radius: 4px;
     font-size: .9rem;
 }
+
+/* CONTACTO */
+
+.contacto-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+@media (max-width: 900px) {
+    .contacto-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.info-contacto {
+    background-color: #ffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px #0000001a;
+    height: fit-content;
+    margin-left: 40px;
+}
+
+.info-contacto h2 {
+    color: #884513;
+    margin-bottom: 25px;
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+}
+
+.info-item {
+    display: flex;
+    margin-bottom: 25px;
+    align-items: flex-start;
+}
+
+.info-icono {
+    background-color: #FFC0CB;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+.info-contenido h3{
+    margin-bottom: 5px;
+    color: #8B4513;
+}
+
+.info-contenido a {
+    color: #BBCBD2;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.info-contenido a:hover{
+    color: #FFC0CB;
+}
+
+.redes-sociales {
+    margin-top: 30px;
+}
+
+.redes-sociales h3 {
+    margin-bottom: 15px;
+    color: #8B4513;
+}
+
+.icono-redes {
+    display: flex;
+    gap: 15px;
+}
+
+.icono-redes a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background-color: #8B4513;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-size: 1.2rem;
+}
+
+.icono-redes a:hover {
+    background-color: #FFC0CB;
+    transform: translateY(-3px);
+}
+
+.form-contacto {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px #0000001a;
+    margin-right: 40px;
+}
+
+.form-contacto h2 {
+    color: #8B4513;
+    margin-bottom: 25px;
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+}
+
+.form-row {
+    margin-bottom: 20px;
+}
+
+.form-row label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #5D4037;
+}
+
+.form-row input,
+.form-row textarea,
+.form-row select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #B0BEC5;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-row input:focus,
+.form-row textarea:focus,
+.form-row select:focus {
+    outline: none;
+    resize: vertical;
+}
+
+.form-row textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+.btn-submit {
+    background-color: #884513;
+    color: #ffff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background-color: #FFC0CB;
+    transform: translateY(-2px) ;
+}
+
+.mapa-seccion {
+    margin-bottom: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mapa-seccion h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #884513;
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+}
+
+.mapa-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px #0000001a;
+    height: 400px;
+    width: 90%;
+    max-width: 900px;
+    position: relative;
+}
+
+.mapa-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.preguntas {
+    background-color: #ffff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 6px #0000001a;
+    margin-bottom: 60px;
+}
+
+.preguntas h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #884513;
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+}
+
+.preguntas-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.pgta {
+    font-weight: 700;
+    color: #8B4513;
+    margin-bottom: 10px;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.respuesta {
+    color: #B0BEC5;
+    display: none;
+    padding-top: 10px;
+}
+
+.respuesta.active {
+    display: block;
+}

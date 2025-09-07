@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contacto - Pasteleria Mil Sabores</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="imagenes/logo.png" alt="Logo Pasteleria Mil Sabores">
+                </div>
+                <nav>
+                    <a href="index.html">Inicio</a>
+                    <a href="productos.html">Productos</a>
+                    <a href="#">Promociones</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+                <div class="btn-sesion">
+                    <a href="inicio_sesion.html">
+                    <button>Iniciar Sesión</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="banner">
+        <div>
+            <h1>Contáctanos</h1>
+            <p>Estamos aquí para endulzar tus momentos especiales. ¡Escríbenos!</p>
+        </div>
+    </section>
+    <div class="cotainer">
+        <div class="contacto-container">
+            <div class="info-contacto">
+                <h2>Información de Contacto</h2>
+                <div class="info-item">
+                    <div class="info-icono">📍</div>
+                    <div class="info-contenido">
+                        <h3>Dirección</h3>
+                        <p>Av. Dulce 123, Providencia <br>Santiago, Chile</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icono">📞</div>
+                    <div class="info-contenido">
+                        <h3>Teléfonos</h3>
+                        <p>+56 2 2345 6789 <br>+56 9 8765 4321 (WhatsApp)</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icono">✉️</div>
+                    <div class="info-contenido">
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@milsabores.cl">info@milsabores.cl</a><br>
+                        <a href="mailto:pepidos@milsabores.cl">pedidos@milsabores.cl</a></p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icono">🕒</div>
+                    <div class="info-contenido">
+                        <h3>Horario de Atención</h3>
+                        <p>Lunes a Viernes: 9:00 - 20:00 <br>Sábados: 10:00 - 18:00 <br>Domingos: 11:00 - 15:00</p>
+                    </div>
+                </div>
+                <div class="redes-sociales">
+                    <h3>Síguenos en Redes Sociales</h3>
+                    <div class="icono-redes">
+                        <a href="#" title="Facebook">f</a>
+                        <a href="#" title="Instagram">i</a>
+                        <a href="#" title="X">x</a>
+                    </div>
+                </div>
+            </div>
+            <div class="form-contacto">
+                <h2>Envíanos un Mensaje</h2>
+                <form id="contactoForm">
+                    <div class="form-row">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    <div class="form-row">
+                        <label for="asunto">Asunto *</label>
+                        <select name="asunto" id="asunto" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="pedido">Realizar pedido</option>
+                            <option value="consulta">Consulta general</option>
+                            <option value="perzonalizar">Personalización de productos</option>
+                            <option value="cotizar">Cotización para eventos</option>
+                            <option value="reclamo">Reclamo o sugerencia</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea name="mensaje" id="mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+        <div class="mapa-seccion">
+            <h2>Nuestra Ubicación</h2>
+            <div class="mapa-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.396036456866!2d-70.650725924239!3d-33.43783797366825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a5e0e5dfc5%3A0x72c34e5d0f0b47c2!2sProvidencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1693500000000!5m2!1ses!2scl" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="preguntas">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="preguntas-item">
+            <div class="pgta">
+                ¿Hacen envíos a todo Santiago?
+                <span>+</span>
+            </div>
+            <div class="respuesta">
+                <p>Sí, realizamos envíos a toda la Región Metropolitana. Los envíos dentro de Providencia, Las Condes y Vitacura son gratuitos en compras superiores a $50.000. Para otras comunas, el costo de envío se calcula al momento de la compra.</p>
+            </div>
+        </div>
+        <div class="preguntas-item">
+            <div class="pgta">
+                ¿Cómo puedo pagar mi pedido?
+                <span>+</span>
+            </div>
+            <div class="respuesta">
+                <p>Aceptamos múltiples métodos de pago: tarjetas de crédito/débito, transferencia bancaria, Webpay y efectivo al momento de la entrega.</p>
+            </div>
+        </div>
+        <div class="preguntas-item">
+            <div class="pgta">
+                ¿Ofrecen opciones para personas con restricciones alimentarias?
+                <span>+</span>
+            </div>
+            <div class="respuesta">
+                <p>Sí, contamos con una variedad de productos sin azúcar, sin gluten y veganos. Especifica tus requerimientos al hacer el pedido y nos aseguraremos de prepararlo según tus necesidades.</p>
+            </div>
+        </div>
+        <div class="preguntas-item">
+            <div class="pgta">
+                ¿Puedo modificar o cancelar mi pedido?
+                <span>+</span>
+            </div>
+            <div class="respuesta">
+                <p>Puedes modificar o cancelar tu pedido sin costo hasta 24 horas antes de la fecha de entrega programada. Después de ese plazo, podría aplicarse un cargo por cancelación.</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Pastelería Mil Sabores</h3>
+                    <p>50 años endulzando momentos especiales con la mejor repostería chilena.</p>
+                    <div class="social-icons">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">X</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="#">Promociones</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contáctanos</h3>
+                    <p>Dirección: Av. Dulce 123, Santiago</p>
+                    <p>Teléfono: +56 2 2345 6789</p>
+                    <p>Email: info@milsabores.cl</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Pastelería Mil Sabores - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+        
+
+</body>
+</html>
