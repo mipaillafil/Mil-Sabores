@@ -877,21 +877,21 @@ footer {
 }
 
 #errores {
-    position: fixed;         /* lo fija en pantalla */
-    top: 20px;               /* distancia desde arriba */
-    left: 50%;               /* centrado horizontal */
+    position: fixed;         
+    top: 20px;               
+    left: 50%;               
     transform: translateX(-50%);
-    background-color: #fdeaea; /* fondo rojo suave */
-    border: 1px solid #e74c3c; /* borde rojo */
+    background-color: #fdeaea; 
+    border: 1px solid #e74c3c; 
     border-radius: 8px;
     padding: 15px 25px;
-    z-index: 9999;           /* encima de todo */
+    z-index: 9999;          
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    display: none;            /* oculto por defecto */
-    animation: slideDown 0.5s forwards; /* animación al aparecer */
+    display: none;            
+    animation: slideDown 0.5s forwards; 
 }
 
-/* Cada mensaje dentro */
+
 #errores p {
     color: #e74c3c;
     font-weight: bold;
@@ -901,7 +901,6 @@ footer {
     gap: 5px;
 }
 
-/* Icono de advertencia */
 #errores p::before {
     content: "⚠️";
 }
