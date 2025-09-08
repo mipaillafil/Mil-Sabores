@@ -10,64 +10,71 @@ const errores = document.getElementById('errores');
 const set = new Set();
 
 
+function mostrarErrores() {
+    errores.innerHTML = "";
+    if (set.size > 0) {
+        errores.style.display = "block";
+        const primerError = set.values().next().value;
+        errores.innerHTML = `<p>${primerError}</p>`;
+    } else {
+        errores.style.display = "none";
+    }
+}
+
 nombre.addEventListener('keyup', function (e) {
     if (nombre.value.length == 0) {
         nombre.classList.add("error");
-        set.add("<p>Completa el campo nombre.</p>");
+        set.add("Completa el campo nombre.");
     } else {
         nombre.classList.remove("error");
-        set.delete("<p>Completa el campo nombre.</p>");
-    }
+        set.delete("Completa el campo nombre.");
+    } mostrarErrores();
 });
 mail.addEventListener('keyup', function (e) {
     if (!mail.value.includes("@")) {
         mail.classList.add("error");
-        set.add("<p>Añade un signo arroba (@).</p>");
+        set.add("Añade un signo arroba (@).");
     } else {
         mail.classList.remove("error");
-        set.delete("<p>Añade un signo arroba (@).</p>");
-    }
+        set.delete("Añade un signo arroba (@).");
+    } mostrarErrores();
 });
 usuario.addEventListener('keyup', function (e) {
     if (usuario.value.length == 0) {
         usuario.classList.add("error");
-        set.add("<p>Completa el campo usuario.</p>");
+        set.add("Completa el campo usuario.");
     } else {
         usuario.classList.remove("error");
-        set.delete("<p>Completa el campo usuario.</p>");
-    }
+        set.delete("Completa el campo usuario.");
+    } mostrarErrores();
 });
 clave1.addEventListener('keyup', function (e) {
     if (clave1.value.length == 0) {
         clave1.classList.add("error");
-        set.add("<p>Contraseña no puede estar vacio.</p>");
+        set.add("Contraseña no puede estar vacio.");
     } else {
         clave1.classList.remove("error");
-        set.delete("<p>Contraseña no puede estar vacio.</p>");
-    }
+        set.delete("Contraseña no puede estar vacio.");
+    } mostrarErrores();
 });
 clave2.addEventListener('keyup', function (e) {
     if (clave1.value != clave2.value) {
         clave2.classList.add("error");
-        set.add("<p>Las contraseñas no coinciden.</p>");
+        set.add("Las contraseñas no coinciden.");
     } else {
         clave2.classList.remove("error");
-        set.delete("<p>Las contraseñas no coinciden.</p>");
-    }
+        set.delete("Las contraseñas no coinciden.");
+    } mostrarErrores();
 });
 
 form.addEventListener('submit', function (e) {
-    errores.innerHTML = "";
-
     document.querySelectorAll("input").forEach(element => {
         if (element.classList.contains("error")) {
             e.preventDefault();
-            set.add("<p>Error, revisa los campos en rojo!.</p>");
+            set.add("Error, revisa los campos en rojo!");
         }
     });
-    set.forEach(p => {
-        errores.innerHTML += p;
-    })
+    mostrarErrores();
 });
 
 // Registro código promocional

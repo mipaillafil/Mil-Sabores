@@ -30,114 +30,116 @@
             </div>
         </div>
     </header>
-    <section class="banner-carrito">
-        <div>
-            <h1>Tu Carrito de Compras</h1>
-        </div>
-    </section>
-    <div class="container">
-        <div class="carrito-container">
-            <div class="carrito-items">
-                <div class="carrito-header">
-                    <h2 class="titulo-carrito">Tus Productos</h2>
-                    <span>3 items</span>
+    <main>
+        <section class="banner-carrito">
+            <div>
+                <h1>Tu Carrito de Compras</h1>
+            </div>
+        </section>
+        <div class="container">
+            <div class="carrito-container">
+                <div class="carrito-items">
+                    <div class="carrito-header">
+                        <h2 class="titulo-carrito">Tus Productos</h2>
+                        <span>3 items</span>
+                    </div>
+                    <div class="carrito-item">
+                        <div class="img-item">
+                            <img src="imagenes/torta naranja.jpg" alt="Torta de naranja">
+                        </div>
+                        <div class="desc-item">
+                            <h3 class="nombre-item">Torta sin Azúcar de Naranja</h3>
+                            <div class="categoria-item">
+                                <p>Productos Sin Azúcar</p>
+                            </div>
+                            <div class="precio-item">$48.000</div>
+                        </div>
+                        <div class="carrito-acciones">
+                            <div class="cantidad">
+                                <button class="btn-cantidad">-</button>
+                                <input type="text" class="ipt-cantidad" value="1">
+                                <button class="btn-cantidad">+</button>
+                            </div>
+                            <button class="btn-eliminar">🗑️ Eliminar</button>
+                        </div>
+                    </div>
+                    <div class="carrito-item">
+                        <div class="img-item">
+                            <img src="imagenes/torta cuadrada.jpg" alt="Torta cuadrada de chocolate">
+                        </div>
+                        <div class="desc-item">
+                            <h3 class="nombre-item">Torta Cuadrada de Chocolate</h3>
+                            <div class="categoria-item">
+                                <p>Tortas Cuadradas</p>
+                            </div>
+                            <div class="precio-item">$45.000</div>
+                            <div class="personalizar-item">
+                                <p><strong>Personalización:</strong>"Feliz Cumpleaños María"</p>
+                            </div>
+                        </div>
+                        <div class="carrito-acciones">
+                            <div class="cantidad">
+                                <button class="btn-cantidad">-</button>
+                                <input type="text" class="ipt-cantidad" value="1">
+                                <button class="btn-cantidad">+</button>
+                            </div>
+                            <button class="btn-eliminar">🗑️ Eliminar</button>
+                        </div>
+                    </div>
+                    <div class="carrito-item">
+                        <div class="img-item">
+                            <img src="imagenes/brownie.avif" alt="Brownie de Chocolate">
+                        </div>
+                        <div class="desc-item">
+                            <h3 class="nombre-item">Brownie Sin Gluten</h3>
+                            <div class="categoria-item">
+                                <p>Productos Sin Glutenr</p>
+                            </div>
+                            <div class="precio-item">$4.000</div>
+                        </div>
+                        <div class="carrito-acciones">
+                            <div class="cantidad">
+                                <button class="btn-cantidad">-</button>
+                                <input type="text" class="ipt-cantidad" value="1">
+                                <button class="btn-cantidad">+</button>
+                            </div>
+                            <button class="btn-eliminar">🗑️ Eliminar</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="carrito-item">
-                    <div class="img-item">
-                        <img src="imagenes/torta naranja.jpg" alt="Torta de naranja">
+                <div class="carrito-resumen">
+                    <h2 class="resumen-titulo">Resumen de Compra</h2>
+
+                    <div class="resumen-item">
+                        <span>Subtotal (3 productos)</span>
+                        <span>$97.000</span>
                     </div>
-                    <div class="desc-item">
-                        <h3 class="nombre-item">Torta sin Azúcar de Naranja</h3>
-                        <div class="categoria-item">
-                            <p>Productos Sin Azúcar</p>
-                        </div>
-                        <div class="precio-item">$48.000</div>
+
+                    <div class="resumen-item">
+                        <span>Descuento <span class="descuento">-30%</span></span>
+                        <span style="color:#4CAF50;">-$29.100</span>
                     </div>
-                    <div class="carrito-acciones">
-                        <div class="cantidad">
-                            <button class="btn-cantidad">-</button>
-                            <input type="text" class="ipt-cantidad" value="1">
-                            <button class="btn-cantidad">+</button>
-                        </div>
-                        <button class="btn-eliminar">🗑️ Eliminar</button>
+                    <div class="resumen-item">
+                        <span>Envío</span>
+                        <span style="color: #4CAF50;">Gratis</span>
                     </div>
-                </div>
-                <div class="carrito-item">
-                    <div class="img-item">
-                        <img src="imagenes/torta cuadrada.jpg" alt="Torta cuadrada de chocolate">
+                    <div class="resumen-total">
+                        <span>Total</span>
+                        <span>$67.900 CLP</span>
                     </div>
-                    <div class="desc-item">
-                        <h3 class="nombre-item">Torta Cuadrada de Chocolate</h3>
-                        <div class="categoria-item">
-                            <p>Tortas Cuadradas</p>
-                        </div>
-                        <div class="precio-item">$45.000</div>
-                        <div class="personalizar-item">
-                            <p><strong>Personalización:</strong>"Feliz Cumpleaños María"</p>
+                    <div class="cupon-descuento">
+                        <label for="cupon">¿Tienes un cupón?</label>
+                        <div class="cupon-input">
+                            <input type="text" id="cupon" placeholder="Ingresa tu cupón">
+                            <button class="btn-cupon">Aplicar</button>
                         </div>
                     </div>
-                    <div class="carrito-acciones">
-                        <div class="cantidad">
-                            <button class="btn-cantidad">-</button>
-                            <input type="text" class="ipt-cantidad" value="1">
-                            <button class="btn-cantidad">+</button>
-                        </div>
-                        <button class="btn-eliminar">🗑️ Eliminar</button>
-                    </div>
-                </div>
-                <div class="carrito-item">
-                    <div class="img-item">
-                        <img src="imagenes/brownie.avif" alt="Brownie de Chocolate">
-                    </div>
-                    <div class="desc-item">
-                        <h3 class="nombre-item">Brownie Sin Gluten</h3>
-                        <div class="categoria-item">
-                            <p>Productos Sin Glutenr</p>
-                        </div>
-                        <div class="precio-item">$4.000</div>
-                    </div>
-                    <div class="carrito-acciones">
-                        <div class="cantidad">
-                            <button class="btn-cantidad">-</button>
-                            <input type="text" class="ipt-cantidad" value="1">
-                            <button class="btn-cantidad">+</button>
-                        </div>
-                        <button class="btn-eliminar">🗑️ Eliminar</button>
-                    </div>
+                    <button class="btn-pago">Proceder al Pago</button>
+                    <a href="productos.html" class="continuar-compra">← Seguir comprando</a>
                 </div>
             </div>
-            <div class="carrito-resumen">
-                <h2 class="resumen-titulo">Resumen de Compra</h2>
-
-                <div class="resumen-item">
-                    <span>Subtotal (3 productos)</span>
-                    <span>$97.000</span>
-                </div>
-
-                <div class="resumen-item">
-                    <span>Descuento <span class="descuento">-30%</span></span>
-                    <span style="color:#4CAF50;">-$29.100</span>
-                </div>
-                <div class="resumen-item">
-                    <span>Envío</span>
-                    <span style="color: #4CAF50;">Gratis</span>
-                </div>
-                <div class="resumen-total">
-                    <span>Total</span>
-                    <span>$67.900 CLP</span>
-                </div>
-                <div class="cupon-descuento">
-                    <label for="cupon">¿Tienes un cupón?</label>
-                    <div class="cupon-input">
-                        <input type="text" id="cupon" placeholder="Ingresa tu cupón">
-                        <button class="btn-cupon">Aplicar</button>
-                    </div>
-                </div>
-                <button class="btn-pago">Proceder al Pago</button>
-                <a href="productos.html" class="continuar-compra">← Seguir comprando</a>
-            </div>
         </div>
-    </div>
+    </main>
     <footer>
         <div class="container">
             <div class="footer-content">

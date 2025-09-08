@@ -144,7 +144,6 @@ nav a:hover {
     box-shadow: 0 4px 6px #0000001a;
     transition: transform .3s;
     position: relative;
-    cursor: pointer;
 }
 
 .categoria-card:hover {
@@ -191,7 +190,7 @@ nav a:hover {
     background-position: center;
 }
 
-.productos-grid {
+.productos-destacados {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 30px;
@@ -348,10 +347,9 @@ footer {
 
 .carrito-icono span {
     position: absolute;
-    top: -10px;
-    right: -10px;
-    background-color: var(--color-accent-pink);
-    color: var(--color-white);
+    top: 20px;
+    background-color: #FFC0CB;
+    color: #fff;
     border-radius: 50%;
     width: 20px;
     height: 20px;
@@ -380,7 +378,7 @@ footer {
 }
 
 .banner p {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .nav-categorias {
@@ -416,6 +414,7 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(280px, 350px));
     justify-content: center;
     gap: 30px;
+        margin-bottom: 50px;
 }
 
 /*Estilos para el nuevo código de producto*/
@@ -723,12 +722,12 @@ footer {
 }
 
 
-.login-links a:hover {
+.login-links strong {
     color: #8B4513;
 }
 
-.login-links strong {
-    color: #8B4513;
+.login-links strong:hover {
+    color: #FFC0CB;
 }
 
 /* Responsivo */
@@ -781,6 +780,7 @@ footer {
 
 .registro label {
     margin-bottom: 2px;
+    color: #5D4037;
 }
 
 .registro input {
@@ -796,7 +796,7 @@ footer {
 }
 
 .registro input::placeholder {
-    color: #BBCBD2;
+    color: #92999c;
     font-weight: 400;
 }
 
@@ -855,11 +855,16 @@ footer {
 
 .iniciar-sesion {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .iniciar-sesion p {
     margin-top: 20px;
+    color: #5D4037;
+}
+
+.registro a {
+    color: #8B4513;
 }
 
 .registro a:hover {
@@ -869,6 +874,47 @@ footer {
 .registro .error {
     outline: 1px red solid;
     background-color: #ff000044;
+}
+
+#errores {
+    position: fixed;         /* lo fija en pantalla */
+    top: 20px;               /* distancia desde arriba */
+    left: 50%;               /* centrado horizontal */
+    transform: translateX(-50%);
+    background-color: #fdeaea; /* fondo rojo suave */
+    border: 1px solid #e74c3c; /* borde rojo */
+    border-radius: 8px;
+    padding: 15px 25px;
+    z-index: 9999;           /* encima de todo */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: none;            /* oculto por defecto */
+    animation: slideDown 0.5s forwards; /* animación al aparecer */
+}
+
+/* Cada mensaje dentro */
+#errores p {
+    color: #e74c3c;
+    font-weight: bold;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Icono de advertencia */
+#errores p::before {
+    content: "⚠️";
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
 }
 
 
@@ -1614,6 +1660,7 @@ nav a.active {
 }
 
 .pgta {
+    display: flex;
     font-weight: 700;
     color: #8B4513;
     margin-bottom: 10px;
