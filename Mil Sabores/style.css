@@ -329,16 +329,6 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.copyright::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 10%;
-    width: 80%;
-    height: 1px;
-    background-color: #ffffff96;
-}
-
 /* CSS DE PRODUCTOS */
 .carrito-icon {
     position: relative;
@@ -833,7 +823,6 @@ footer {
     color: #ffffff;
     padding: 1rem;
     width: auto;
-    display: block;
     border: none;
     outline: none;
     cursor: pointer;
